@@ -21,17 +21,18 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <nav class="header-nav">
+        <div class="header-nav">
           <a href="./index.html" class="main-logo">
             Web<span class="logo-part">Studio</span>
           </a>
 
         <button class="menu-btn" type="button" aria-label="Open menu button">
-          <svg class="menu-btn-icon" width="24" height="24">
+          <svg class="menu-btn-icon" width="16,8" height="14,4">
             <use href="./images/icons.svg#"></use>
           </svg>
         </button>
 
+         <nav class="nav-header not-shown">
           <ul class="header-nav-list">
             <li>
               <a class="header-menu active" href="./index.html">Studio</a>
@@ -40,6 +41,7 @@
             <li><a class="header-menu" href="">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="address">
           <ul class="address-list">
             <li>
@@ -590,5 +592,63 @@
         </form>
       </div>
     </div>
-  </body>
+
+<div class="backdrop-mobile is-open">
+    <div class="mobile-menu">
+       <button class="mobile-btn" type="button">
+          <svg class="mobile-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="./index.html" class="link-nav is-active-nav">Studio</a></li>
+            </li>
+            <li class="nav-item"><a href="" class="link-nav">Portfolio</a></li>
+            </li>
+            <li class="nav-item"><a href="" class="link-nav">Contacts</a></li>
+            </li>
+          </ul>
+        </nav>
+        
+          <address class="contacts">
+            <ul class="manu-contacts">
+              <li><a href="mailto:info@devstudio.com" class="link-manu-contacts">info@devstudio.com</a></li>
+              <li><a href="tel:+110001111111" class="link-manu-contacts">+11 (000) 111-11-11</a></li>
+            </ul>
+          </address>
+
+        <ul class="socials">
+          <li class="socials-list">
+            <a class="social-icons" href="https://x.com">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list">
+            <a class="social-icons" href="https://x.com">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list">
+            <a class="social-icons" href="https://facebook.com">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list">
+            <a class="social-icons" href="https://linkedin.com">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+    </div>
+</div>
+</body>
 </html>
