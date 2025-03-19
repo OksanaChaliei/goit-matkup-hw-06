@@ -20,20 +20,14 @@
   </head>
   <!-- main content-->
   <body>
-    <header class="header hidden">
+    <header class="header">
       <div class="header-container container">
         <div class="header-nav">
           <a href="./index.html" class="main-logo">
             Web<span class="logo-part">Studio</span>
           </a>
 
-        <button class="menu-btn" type="button" aria-label="Open menu button">
-          <svg class="menu-btn-icon" width="16,8" height="14,4">
-            <use href="./images/icons.svg#"></use>
-          </svg>
-        </button>
-
-         <nav class="nav-header not-shown">
+         <nav class="nav-header">
           <ul class="header-nav-list">
             <li>
               <a class="header-menu active" href="./index.html">Studio</a>
@@ -56,7 +50,12 @@
               >
             </li>
           </ul>
-        </address>
+        </address> 
+        <button class="menu-btn" type="button" aria-label="Open menu button">
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Group"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- center content-->
@@ -122,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <section class="team-section section hidden">
+      <section class="team-section section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -301,7 +300,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio-section section hidden">
+      <section class="portfolio-section section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list card-set">
@@ -424,7 +423,7 @@
       </section>
     </main>
     <!--finish-->
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="block">
           <a href="./index.html" class="footer-logo">
@@ -491,7 +490,7 @@
       </div>
     </footer>
 
-    <div class="backdrop hidden">
+    <div class="backdrop .is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="modal-close-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -594,8 +593,8 @@
       </div>
     </div>
 
-<div class="backdrop-mobile hidden">
-    <div class="mobile-menu">
+<div class="backdrop-mobile is-open">
+    <div class="mobile-menu-container container">
        <button class="mobile-btn" type="button">
           <svg class="mobile-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>

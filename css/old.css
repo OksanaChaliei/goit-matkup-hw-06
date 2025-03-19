@@ -168,6 +168,7 @@ img {
         gap: 24px;
         margin-bottom: 48px;
     }
+}
 
     .header-menu {
         position: relative;
@@ -362,12 +363,6 @@ img {
         padding: 120px 0;
         background-color: #F4F4FD;
     }
-
-    .team-info {
-        padding: 32px 0;
-        text-align: center;
-    }
-
     .team-title {
         margin-bottom: 72px;
         color: #2e2f42;
@@ -378,12 +373,13 @@ img {
         text-transform: capitalize;
     }
 
-    .team-list {
-        display: flex;
-        flex-direction: column;
-        gap: 72px;
+    
+    .team-info {
+        padding: 32px 0;
+        text-align: center;
     }
 
+    
     .team-item {
         width: calc((100% - 72px) / 4);
         border-radius: 0px 0px 4px 4px;
@@ -394,28 +390,20 @@ img {
             0 1px 2px 0 rgba(46, 47, 66, 0.08);
         transform: translateY(0%);
     }
-
-    @media only screen and (min-width: 768px) {
-        .team-list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 64px 24px;
-        }
-
-        .team-item {
-            flex-basis: calc((100% - 24px) / 2);
-        }
-    }
-
-    @media only screen and (min-width: 1158px) {
-        .team-list {
-            gap: 24px;
-        }
-
-        .team-item {
-            flex-basis: calc((100% - 72px) / 4);
-        }
-    }
+.team-item {
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 2px 0 rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
+}
+    .team-list {
+    display: flex;
+    gap: 24px;
+    } 
 
     .social-list-team {
         display: flex;
@@ -569,7 +557,6 @@ img {
         padding: 40px 32px;
         display: flex;
         color: #f4f4fd;
-        ;
         background: #4D5AE5;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             color 250ms cubic-bezier(0.4, 0, 0.2, 1),
